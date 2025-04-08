@@ -1,5 +1,5 @@
 import 'package:animate_do/animate_do.dart';
-import 'package:assets_audio_player/assets_audio_player.dart';
+// import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
 import 'package:music_player/src/helpers/helpers.dart';
 import 'package:music_player/src/models/audioplayer_model.dart';
@@ -92,7 +92,7 @@ class _TituloPlayState extends State<TituloPlay>
   bool firstTime = true;
   late AnimationController playAnimation;
 
-  final assetAudioPlayer = new AssetsAudioPlayer();
+  // final assetAudioPlayer = new AssetsAudioPlayer();
 
   @override
   void initState() {
@@ -109,24 +109,24 @@ class _TituloPlayState extends State<TituloPlay>
     super.dispose();
   }
 
-  void open() {
-    final audioPlayerModel =
-        Provider.of<AudioPlayerModel>(context, listen: false);
+  // void open() {
+  //   final audioPlayerModel =
+  //       Provider.of<AudioPlayerModel>(context, listen: false);
 
-    //! assetAudioPlayer.open('assets/Breaking-Benjamin-Far-Away.mp3');
-    assetAudioPlayer.open(Audio('assets/Breaking-Benjamin-Far-Away.mp3'),
-        autoStart: true, showNotification: true);
+  //   //! assetAudioPlayer.open('assets/Breaking-Benjamin-Far-Away.mp3');
+  //   assetAudioPlayer.open(Audio('assets/Breaking-Benjamin-Far-Away.mp3'),
+  //       autoStart: true, showNotification: true);
 
-    assetAudioPlayer.currentPosition.listen((duration) {
-      audioPlayerModel.current = duration;
-    });
+  //   assetAudioPlayer.currentPosition.listen((duration) {
+  //     audioPlayerModel.current = duration;
+  //   });
 
-    assetAudioPlayer.current.listen((playingAudio) {
-      //! audioPlayerModel.songDuration = playingAudio.duration;
-      audioPlayerModel.songDuration =
-          playingAudio?.audio.duration ?? Duration(seconds: 0);
-    });
-  }
+  //   assetAudioPlayer.current.listen((playingAudio) {
+  //     //! audioPlayerModel.songDuration = playingAudio.duration;
+  //     audioPlayerModel.songDuration =
+  //         playingAudio?.audio.duration ?? Duration(seconds: 0);
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -165,10 +165,10 @@ class _TituloPlayState extends State<TituloPlay>
               }
 
               if (firstTime) {
-                this.open();
+                // this.open();
                 firstTime = false;
               } else {
-                assetAudioPlayer.playOrPause();
+                // assetAudioPlayer.playOrPause();
               }
             },
             elevation: 0,
