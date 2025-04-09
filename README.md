@@ -1,4 +1,4 @@
-# music_player
+# Music Player
 
 - **Now Playing Visualization**: Users can view the currently playing song in detail, with engaging artwork and animations synced to the music.
 - **Interactive Animations**: Smooth and immersive animations during song transitions, screen navigation, and while interacting with playback controls.
