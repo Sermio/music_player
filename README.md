@@ -1,5 +1,9 @@
 # Music Player
 
+# Description
+Music player app with animated visualizations, an intuitive interface, and responsive design, built with Flutter and state managed using Provider.
+
+#Features
 - **Now Playing Visualization**: Users can view the currently playing song in detail, with engaging artwork and animations synced to the music.
 - **Interactive Animations**: Smooth and immersive animations during song transitions, screen navigation, and while interacting with playback controls.
 - **Intuitive Interface**: Clean and minimalist UI designed for easy browsing of music content and quick access to key features.
